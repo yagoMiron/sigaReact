@@ -1,0 +1,38 @@
+.header {
+  margin: 0;
+  background: rgb(0, 77, 14);
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  padding: 5%;
+  margin: 0;
+}
+.login {
+  align-self: flex-end;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.login input {
+  padding: 5px;
+  border-radius: 10px;
+}
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1e8f2f;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.icon {
+  height: 28px;
+  width: 36px;
+  filter: invert(1);
+}

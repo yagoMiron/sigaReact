@@ -1,0 +1,21 @@
+.section {
+  display: flex;
+  height: 100%;
+  gap: 15px;
+  padding: 15px;
+}
+.section nav {
+  width: 25vw;
+  border: black solid 1px;
+  border-radius: 20px;
+}
+.section main {
+  width: 100%;
+  border: black solid 1px;
+  border-radius: 20px;
+}
+.aside {
+  width: 25vw;
+  border: black solid 1px;
+  border-radius: 20px;
+}

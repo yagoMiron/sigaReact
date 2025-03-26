@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import eye from "../../assets/svg/eye.svg";
 import eye_slash from "../../assets/svg/eye_slash.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   showLogin?: boolean;
@@ -10,6 +11,7 @@ type Props = {
 
 const Header = ({ showLogin, pageName }: Props) => {
   const [shouldShowPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
   const switchShowPassword = () => {
     setShowPassword(!shouldShowPassword);
   };
@@ -33,7 +35,15 @@ const Header = ({ showLogin, pageName }: Props) => {
             src={shouldShowPassword ? eye_slash : eye}
             onClick={switchShowPassword}
           ></img>
-          <button className={styles.btn}>Logar</button>
+          <button
+            className={styles.btn}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/home");
+            }}
+          >
+            Logar
+          </button>
         </form>
       )}
     </header>

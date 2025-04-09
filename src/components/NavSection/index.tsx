@@ -13,7 +13,7 @@ const NavSection = ({ children }: Props) => {
         <img className={styles.avatar} src={avatar} alt="avatar" />
         <div className={styles.conta_link}>
           <Link className={styles.link} to="/conta">
-            Contaa
+            Conta
           </Link>
           <hr />
           <Link className={styles.link} to="/logout">

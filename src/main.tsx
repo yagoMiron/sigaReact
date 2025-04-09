@@ -8,6 +8,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <App />
+    <div className="page">
+      <App />
+    </div>
   </BrowserRouter>
 );

@@ -2,10 +2,10 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import NavSection from "../../components/NavSection";
 
-const Jogo = () => {
+const Conta = () => {
   return (
     <>
-      <Header pageName="Jogo" />
+      <Header pageName="Conta" />
       <NavSection>
         <main></main>
       </NavSection>
@@ -13,4 +13,4 @@ const Jogo = () => {
     </>
   );
 };
-export default Jogo;
+export default Conta;

@@ -1,0 +1,11 @@
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}

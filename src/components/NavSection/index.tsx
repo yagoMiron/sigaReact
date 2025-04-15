@@ -8,7 +8,7 @@ type Props = {
 
 const NavSection = ({ children }: Props) => {
   return (
-    <section className={styles.section}>
+    <section className={styles.navSection}>
       <nav>
         <img className={styles.avatar} src={avatar} alt="avatar" />
         <div className={styles.conta_link}>

@@ -4,6 +4,8 @@ import TipoUsuario from "../../enums/TipoUsuario";
 import InputText from "../InputText";
 import InputPassword from "../InputPassword";
 import { Link } from "react-router-dom";
+import InputImage from "../InputImage";
+import InputDate from "../InputDate";
 
 const RegisterSection = () => {
   const [selectedTipe, setSelectedType] = useState("");
@@ -64,40 +66,24 @@ const RegisterSection = () => {
             value={userConfirmPassword}
             label="Repita a senha"
           />
-          <div>
-            <label className={styles.label} htmlFor="foto">
-              Foto:
-            </label>
-            <input
-              type="file"
-              name="foto"
-              value={userPicture}
-              onChange={(e) => {
-                e.preventDefault();
-                setUserPicture(e.target.value);
-              }}
-            />
-          </div>
+          <InputImage
+            value={userPicture}
+            setter={setUserPicture}
+            name="foto"
+            label="Foto"
+          />
           <InputText
             name="CPF"
             value={userCpf}
             setter={setUserCpf}
             label="CPF (somente números)"
           />
-          <div>
-            <label className={styles.label} htmlFor="nascimento">
-              Data de nascimento:
-            </label>
-            <input
-              type="date"
-              name="nascimento"
-              value={userBirthDate}
-              onChange={(e) => {
-                e.preventDefault();
-                setUserBirthDate(e.target.value);
-              }}
-            />
-          </div>
+          <InputDate
+            value={userBirthDate}
+            setter={setUserBirthDate}
+            name="nascimento"
+            label="Data de Nascimento"
+          />
           <button
             className={styles.submitBtn}
             onClick={(e) => {

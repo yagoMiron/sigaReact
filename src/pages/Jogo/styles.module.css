@@ -1,0 +1,13 @@
+.saveBtn {
+  background-color: #1e8f2f;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 800;
+  border: none;
+  font-size: 16px;
+}
+.divPlayers {
+  display: flex;
+  gap: 16px;
+}

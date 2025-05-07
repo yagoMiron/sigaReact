@@ -1,11 +1,13 @@
+@use "../../styles/variables" as *;
+
 .saveBtn {
-  background-color: #1e8f2f;
+  background-color: $primary-color;
   padding: 8px 20px;
   border-radius: 8px;
-  color: white;
+  color: $secondary-color;
   font-weight: 800;
   border: none;
-  font-size: 16px;
+  font-size: $font-default;
 }
 .divPlayers {
   display: flex;

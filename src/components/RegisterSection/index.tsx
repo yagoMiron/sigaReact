@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import TipoUsuario from "../../enums/TipoUsuario";
 import InputText from "../InputText";
 import InputPassword from "../InputPassword";

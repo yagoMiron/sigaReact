@@ -7,6 +7,7 @@ import Jogo from "../pages/Jogo";
 import Biblioteca from "../pages/Biblioteca";
 import Logout from "../pages/Logout";
 import Conta from "../pages/Conta";
+import "../styles/main.scss";
 
 export const routes: RouteObject[] = [
   {

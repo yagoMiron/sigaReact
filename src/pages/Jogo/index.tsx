@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import InputText from "../../components/InputText";
 import JogoDaVelha from "../../components/JogoDaVelha";
 import NavSection from "../../components/NavSection";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const Jogo = () => {
   const [jogador1, setJogador1] = useState("");

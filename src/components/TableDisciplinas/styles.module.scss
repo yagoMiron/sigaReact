@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .tabela {
   display: flex;
   flex-direction: column;
@@ -7,5 +9,5 @@
 .tabela td {
   padding: 4px 16px;
   text-align: center;
-  border: 1px solid;
+  border: $thin-border;
 }

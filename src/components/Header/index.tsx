@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import { useState } from "react";
 import InputPassword from "../InputPassword";
 import InputText from "../InputText";

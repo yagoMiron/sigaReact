@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 import avatar from "../../assets/img/avatar.jpg";
 

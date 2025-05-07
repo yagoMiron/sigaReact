@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+@mixin botao-tema($tema) {
+  @if $tema == light {
+    background-color: white;
+    color: black;
+  } @else if $tema == dark {
+    background-color: black;
+    color: white;
+  } @else {
+    background-color: gray;
+    color: white;
+  }
+}

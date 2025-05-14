@@ -20,7 +20,9 @@ const RegisterSection = () => {
   return (
     <section className={styles.section}>
       <nav>
-        <Link to="https://www.ifms.edu.br/">Site do IFMS</Link>
+        <p>
+          <Link to="https://www.ifms.edu.br/">Site do IFMS</Link>
+        </p>
         <hr />
       </nav>
       <main>

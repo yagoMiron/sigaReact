@@ -1,18 +1,32 @@
+:root {
+  --tema: "dark";
+}
+
 @mixin flex-center {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
 }
-@mixin botao-tema($tema) {
-  @if $tema == light {
+@mixin aplica-tema($tema) {
+  @if var(--tema) == "impressão" {
     background-color: white;
     color: black;
-  } @else if $tema == dark {
-    background-color: black;
-    color: white;
-  } @else {
-    background-color: gray;
-    color: white;
+  }
+  @if var(--tema) == "dark" {
+    background-color: #262c36;
+    color: #d1d7e0;
+    border-color: #d1d7e0;
+  }
+}
+@mixin icone-tema($tema) {
+  @if $tema == "dark" {
+    filter: invert(1);
+  }
+}
+@mixin remove-cores($tema) {
+  @if $tema == "impressão" {
+    background-color: white;
+    color: black;
   }
 }

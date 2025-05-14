@@ -1,4 +1,5 @@
 @use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .header {
   margin: 0;
@@ -6,6 +7,8 @@
   color: $secondary-color;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  @include remove-cores($tema);
 }
 .title {
   padding: 5%;
@@ -27,13 +30,10 @@
   border: solid 1px gray;
   font-size: $font-default;
   font-weight: bold;
+  @include remove-cores($tema);
 }
 .btn:hover {
   background-color: $secondary-color;
   color: $primary-color;
-}
-.icon {
-  height: 28px;
-  width: 36px;
-  filter: invert(1);
+  @include remove-cores($tema);
 }

@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import eye from "../../assets/svg/eye.svg";
 import eye_slash from "../../assets/svg/eye_slash.svg";
 import { useState } from "react";

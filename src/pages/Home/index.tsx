@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import NavSection from "../../components/NavSection";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const Home = () => {
   return (

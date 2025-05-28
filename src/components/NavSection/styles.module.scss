@@ -1,6 +1,23 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
+body.darktheme {
+  .navSection {
+    @include aplica-tema("dark");
+    nav,
+    main,
+    aside {
+      @include aplica-tema("dark");
+    }
+  }
+  .link {
+    @include aplica-tema("dark");
+  }
+  .link:hover {
+    @include remove-cores("dark");
+  }
+}
+
 .navSection {
   display: flex;
   height: 100%;
@@ -8,8 +25,8 @@
   padding: 15px;
   box-sizing: border-box;
   width: 100vw;
-  @include aplica-tema($tema);
 }
+
 .navSection nav {
   width: 25vw;
   border: $thin-border;
@@ -19,7 +36,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  @include aplica-tema($tema);
 }
 .navSection main {
   display: flex;
@@ -29,7 +45,6 @@
   border-radius: 20px;
   text-align: start;
   padding: 16px 32px;
-  @include aplica-tema($tema);
 }
 .navSection aside {
   width: 15vw;
@@ -37,7 +52,6 @@
   border-radius: 20px;
   text-align: start;
   padding: 0 32px;
-  @include aplica-tema($tema);
 }
 
 .label {
@@ -80,12 +94,10 @@
   width: 100%;
   padding: 4px 0px;
   border-radius: 5px;
-  @include aplica-tema($tema);
 }
 .link:hover {
   background-color: $thirdy-color;
   color: $secondary-color;
-  @include remove-cores($tema);
 }
 .conta_link {
   display: flex;

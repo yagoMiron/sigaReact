@@ -1,6 +1,29 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
+body.darktheme {
+  .section {
+    nav {
+      @include aplica-tema("dark");
+      a {
+        @include aplica-tema("dark");
+      }
+    }
+    main {
+      @include aplica-tema("dark");
+    }
+  }
+  .aside {
+    @include aplica-tema("dark");
+  }
+  .submitBtn {
+    @include remove-cores("dark");
+  }
+  .submitBtn:hover {
+    @include remove-cores("dark");
+  }
+}
+
 .section {
   display: flex;
   height: 100%;
@@ -13,10 +36,8 @@
   border-radius: 20px;
   padding: 12px 0;
   text-align: center;
-  @include aplica-tema($tema);
 }
 .section nav a {
-  @include aplica-tema($tema);
   text-decoration: none;
   font-weight: 600;
 }
@@ -28,7 +49,6 @@
   border-radius: 20px;
   text-align: start;
   padding: 0 32px;
-  @include aplica-tema($tema);
 }
 .section main form {
   display: flex;
@@ -42,7 +62,6 @@
   border-radius: 20px;
   text-align: start;
   padding: 0 32px;
-  @include aplica-tema($tema);
 }
 .label {
   margin-right: 8px;
@@ -58,10 +77,8 @@
   border: solid 1px gray;
   font-size: 16px;
   font-weight: bold;
-  @include remove-cores(var(--tema));
 }
 .submitBtn:hover {
   background-color: white;
   color: #1e8f2f;
-  @include remove-cores($tema);
 }

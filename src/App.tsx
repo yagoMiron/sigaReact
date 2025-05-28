@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { routes } from "./routes/Routes";
-import "./App.css";
+import styles from "./App.module.scss";
 
 function App() {
   const elements = useRoutes(routes);

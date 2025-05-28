@@ -1,6 +1,12 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
+body.darktheme {
+  .icon {
+    @include icone-tema("dark");
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -18,7 +24,6 @@
 .icon {
   height: 24px;
   width: 32px;
-  @include icone-tema($tema);
 }
 
 .invert {

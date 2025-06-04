@@ -2,9 +2,3 @@
   margin: 0 auto;
   text-align: center;
 }
-.dark-theme {
-  @include aplicar-tema("dark");
-}
-.light-theme {
-  @include aplica-tema("light");
-}

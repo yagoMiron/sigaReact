@@ -1,29 +1,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-body.darktheme {
-  .section {
-    nav {
-      @include aplica-tema("dark");
-      a {
-        @include aplica-tema("dark");
-      }
-    }
-    main {
-      @include aplica-tema("dark");
-    }
-  }
-  .aside {
-    @include aplica-tema("dark");
-  }
-  .submitBtn {
-    @include remove-cores("dark");
-  }
-  .submitBtn:hover {
-    @include remove-cores("dark");
-  }
-}
-
 .section {
   display: flex;
   height: 100%;

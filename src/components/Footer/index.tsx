@@ -11,15 +11,27 @@ const Footer = () => {
       <hr />
       <p>&copy;Todos os direitos reservados;</p>
       <div className={styles.temas}>
-        <button onClick={() => {}}>Light</button>
         <button
           onClick={() => {
-            mudarTema("darktheme");
+            mudarTema("light");
+          }}
+        >
+          Light
+        </button>
+        <button
+          onClick={() => {
+            mudarTema("dark");
           }}
         >
           Dark
         </button>
-        <button>Impressão</button>
+        <button
+          onClick={() => {
+            mudarTema("impress");
+          }}
+        >
+          Impressão
+        </button>
       </div>
     </footer>
   );

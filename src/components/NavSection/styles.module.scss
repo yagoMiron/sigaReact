@@ -1,23 +1,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-body.darktheme {
-  .navSection {
-    @include aplica-tema("dark");
-    nav,
-    main,
-    aside {
-      @include aplica-tema("dark");
-    }
-  }
-  .link {
-    @include aplica-tema("dark");
-  }
-  .link:hover {
-    @include remove-cores("dark");
-  }
-}
-
 .navSection {
   display: flex;
   height: 100%;

@@ -6,7 +6,7 @@
 }
 @mixin aplica-tema($tema) {
   @if $tema == "impress" {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
   }
   @if $tema == "dark" {

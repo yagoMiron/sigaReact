@@ -36,7 +36,7 @@ const InputPassword = ({
         }}
       />
       <img
-        className={`${styles.icon} ${invertColorIcon && styles.invert}`}
+        className={`${styles.icon} ${invertColorIcon && styles.invert} eye`}
         src={shouldShowPassword ? eye_slash : eye}
         onClick={switchShowPassword}
       />

@@ -8,25 +8,6 @@
   --theme: "dark";
 }
 
-body.darktheme {
-  .page {
-    @include aplica-tema("dark");
-  }
-
-  a {
-    @include aplica-tema("dark");
-  }
-}
-
-body.lightheme {
-  .page {
-    @include aplica-tema("light");
-  }
-  a {
-    @include aplica-tema("light");
-  }
-}
-
 body {
   margin: 0;
   display: flex;

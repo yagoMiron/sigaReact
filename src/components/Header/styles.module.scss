@@ -1,29 +1,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-body.darktheme {
-  .header {
-    @include remove-cores("dark");
-  }
-  .btn {
-    @include remove-cores("dark");
-  }
-  .btn:hover {
-    @include remove-cores("dark");
-  }
-}
-.page.impresstheme {
-  .header {
-    @include remove-cores("impress");
-  }
-  .btn {
-    @include remove-cores("impress");
-  }
-  .btn:hover {
-    @include remove-cores("impress");
-  }
-}
-
 .header {
   margin: 0;
   background: $thirdy-color;
@@ -32,6 +9,7 @@ body.darktheme {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 .title {
   padding: 5%;
   margin: 0;
